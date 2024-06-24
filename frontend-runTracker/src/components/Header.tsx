@@ -4,11 +4,11 @@ interface HeaderType {
   description: string;
 }
 
-export const Header = (props: HeaderType) => {
+export const Header = ({ title, description }: HeaderType) => {
   return (
     <header>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </header>
   );
 };
